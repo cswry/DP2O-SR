@@ -3,13 +3,13 @@
 <h1>DP²O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution (NeurIPS 2025)</h1>
 
 <div>
-  <a href="https://scholar.google.com/citations?user=A-U8zE8AAAAJ&hl=zh-CN" target="_blank">Rongyuan Wu<sup>1,2</sup></a>&emsp;
-  <a href="https://scholar.google.com/citations?user=ZCDjTn8AAAAJ&hl=zh-CN" target="_blank">Lingchen Sun<sup>1,2</sup></a>&emsp;
-  <a href="#" target="_blank">Zhengqiang Zhang<sup>1,2</sup></a>&emsp;
-  <a href="#" target="_blank">Shihao Wang<sup>1</sup></a><br>  
-  <a href="#" target="_blank">Tianhe Wu<sup>2,3</sup></a>&emsp;
-  <a href="#" target="_blank">Qiaosi Yi<sup>1,2</sup></a>&emsp;
-  <a href="#" target="_blank">Shuai Li<sup>1</sup></a>&emsp;
+  <a href="https://scholar.google.com/citations?hl=en&user=A-U8zE8AAAAJ" target="_blank">Rongyuan Wu<sup>1,2</sup></a>&emsp;
+  <a href="https://scholar.google.com/citations?user=ZCDjTn8AAAAJ&hl=en" target="_blank">Lingchen Sun<sup>1,2</sup></a>&emsp;
+  <a href="https://scholar.google.com/citations?user=UX26wSMAAAAJ&hl=en" target="_blank">Zhengqiang Zhang<sup>1,2</sup></a>&emsp;
+  <a href="https://scholar.google.com/citations?hl=en&user=7TWugs4AAAAJ" target="_blank">Shihao Wang<sup>1</sup></a><br>  
+  <a href="https://scholar.google.com/citations?hl=en&user=QW1JtysAAAAJ" target="_blank">Tianhe Wu<sup>2,3</sup></a>&emsp;
+  <a href="https://scholar.google.com/citations?user=y5bqy0AAAAAJ&hl=zh-CN" target="_blank">Qiaosi Yi<sup>1,2</sup></a>&emsp;
+  <a href="https://scholar.google.com/citations?hl=en&user=Bd73ldQAAAAJ" target="_blank">Shuai Li<sup>1</sup></a>&emsp;
   <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Lei Zhang<sup>1,2,†</sup></a>
 </div>
 
