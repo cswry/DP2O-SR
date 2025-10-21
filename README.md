@@ -31,9 +31,8 @@
 ## 🧠 What This Work Does
 
 **TL;DR:**  
-DP²O-SR trains generative super-resolution models to better match human perceptual preferences,  
-by optimizing over diverse outputs (sampled via noise) using IQA-based rewards,
-without requiring human annotations during training.
+DP²O-SR post-trains generative SR models to better match human perceptual preferences,  
+by optimizing over diverse outputs (sampled via noise) using IQA-based rewards, without requiring human annotations during training.
 
 <details>
 <summary>📷 Framework diagram</summary>
