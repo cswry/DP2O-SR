@@ -33,25 +33,19 @@
 DP²O-SR post-trains generative SR models to better match human perceptual preferences,  
 by optimizing over diverse outputs (sampled via noise) using IQA-based rewards, without requiring human annotations during training.
 
-<details>
-<summary>📷 Framework diagram</summary>
 
-![Framework](assets/framework.jpg)
-
-</details>
+<p align="center">
+  <img src="assets/framework.jpg" width="66%">
+</p>
 
 
 
 ### 🚀 Fast Convergence with Strong Gains
-
-<details>
-<summary>Training curve vs SOTA</summary>
-
 **DP²O-SR achieves strong perceptual gains in just 500 training steps**, outperforming powerful baselines like [SeeSR](https://github.com/cswry/SeeSR) and [OSEDiff](https://github.com/cswry/OSEDiff).
 
-![Training Curve](assets/training_curve.png)
-
-</details>
+<p align="center">
+  <img src="assets/training_curve.png" width="66%">
+</p>
 
 
 
