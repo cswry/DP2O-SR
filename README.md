@@ -111,7 +111,7 @@ We adaptively weight each preference pair:
 
 ## 🔍 Interesting Observations
 
-### 📊 DP²O-SR Improves Output Consistency Across Random Seeds
+### DP²O-SR Improves Output Consistency Across Random Seeds
 
 <details>
 <summary>Best@M / Mean@M / Worst@M curves</summary>
@@ -126,8 +126,6 @@ We explore how perceptual quality varies with the number of sampled outputs **M*
 
 This shows that **DP²O-SR not only improves average perceptual quality** but more importantly **raises the quality floor**, resulting in more consistent and robust outputs across different seeds.
 
-<!-- <details>
-<summary>📈 Best/Mean/Worst curves on C-SD2 and C-FLUX</summary> -->
 
 <p align="center">
   <img src="assets/stats_sd2.png" width="49%"/>
@@ -141,7 +139,7 @@ This shows that **DP²O-SR not only improves average perceptual quality** but mo
 
 
 
-### ✨ Local Refinement from Global Reward
+### Local Refinement from Global Reward
 
 <details>
 <summary>Local structure enhancement (e.g. wings, eyes)</summary>
