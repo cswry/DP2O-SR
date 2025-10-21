@@ -44,7 +44,7 @@ by optimizing over diverse outputs (sampled via noise) using IQA-based rewards, 
 **DP²O-SR achieves strong perceptual gains in just 500 training steps**, outperforming powerful baselines like [SeeSR](https://github.com/cswry/SeeSR) and [OSEDiff](https://github.com/cswry/OSEDiff).
 
 <p align="center">
-  <img src="assets/training_curve.png" width="66%">
+  <img src="assets/training_curve.png" width="60%">
 </p>
 
 
@@ -66,7 +66,7 @@ Combines full-reference (fidelity) and no-reference (realism) IQA metrics to gui
 ### Multiple Preference Pairs Learning
 
 <details>
-<summary>Specific ditails</summary>
+<summary>Specific details</summary>
 Unlike the conventional best-vs-worst strategy, we rank the generated outputs for each input and retain only the top-N and bottom-N samples to form positive and negative sets. Preference pairs are then constructed between these subsets, avoiding uncertain middle samples and leading to richer supervision and more stable training.
 
 
