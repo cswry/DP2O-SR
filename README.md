@@ -66,7 +66,7 @@ without requiring human annotations during training.
 
 Combines full-reference (fidelity) and no-reference (realism) IQA metrics to guide training with a **hybrid reward**.
 
-![Balanced Reward](assets/reward_comparison.png)
+![Balanced Reward](assets/reward_comparison.jpg)
 
 </details>
 
