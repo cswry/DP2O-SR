@@ -47,7 +47,7 @@ without requiring human annotations during training.
 ### 🚀 Fast Convergence with Strong Gains
 
 <details>
-<summary>📈 Training curve vs SOTA</summary>
+<summary>Training curve vs SOTA</summary>
 
 **DP²O-SR achieves strong perceptual gains in just 500 training steps**, outperforming powerful baselines like [SeeSR](https://github.com/cswry/SeeSR) and [OSEDiff](https://github.com/cswry/OSEDiff).
 
@@ -59,7 +59,7 @@ without requiring human annotations during training.
 
 ## 🌟 Key Contributions
 
-### ✅ Balanced Perceptual Reward
+### Balanced Perceptual Reward
 
 <details>
 <summary>Visual comparison: different reward types</summary>
@@ -90,7 +90,22 @@ The optimal sampling strategy depends on model capacity:
 - Small models prefer **broader coverage** (e.g. 1/4)  
 - Large models learn better with **stronger contrast** (e.g. 1/16)
 
-![Curation Strategy](assets/model_curation.png)
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<b>C-SD2</b><br>
+<img src="assets/curation_sd2.png" width="300"/>
+</td>
+<td align="center">
+<b>C-FLUX</b><br>
+<img src="assets/curation_flux.png" width="300"/>
+</td>
+</tr>
+</table>
+
+</div>
 
 </details>
 
@@ -126,7 +141,22 @@ We explore how perceptual quality varies with the number of sampled outputs **M*
 
 This shows that **DP²O-SR not only improves average perceptual quality** but more importantly **raises the quality floor**, resulting in more consistent and robust outputs across different seeds.
 
-![Stochasticity Stats](assets/best_mean_worst.png)
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<b>C-SD2</b><br>
+<img src="assets/performance_sd2.png" width="300"/>
+</td>
+<td align="center">
+<b>C-FLUX</b><br>
+<img src="assets/performance_flux.png" width="300"/>
+</td>
+</tr>
+</table>
+
+</div>
 
 </details>
 
@@ -143,7 +173,10 @@ DP²O-SR leads to **localized visual improvements**, even though training is gui
 - **Same-seed refinement**: Under the same seed, DP²O-SR outputs consistently show sharper and more accurate textures than the baseline (e.g., clearer wing venation).  
 - **Global-to-local effect**: These refinements emerge without any explicit local supervision, suggesting the model learns to enhance perceptually salient regions.
 
-![Local Refinement](assets/local_refinement.jpg)
+<div align="center">
+  <img src="assets/local_refinement.jpg" width="500"/>
+  <p><b></b> DP²O-SR enhances local details (e.g., wing structure, red box) while preserving stable regions (e.g., head reflections, green box).</p>
+</div>
 
 </details>
 
