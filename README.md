@@ -139,10 +139,10 @@ This shows that **DP²O-SR not only improves average perceptual quality** but mo
 
 
 
-### Local Refinement from Global Reward
+### Local Refinement under Global Reward
 
 <details>
-<summary>Local structure enhancement (e.g. wings, eyes)</summary>
+<summary>Examples of local detail enhancement</summary>
 
 DP²O-SR leads to **localized visual improvements**, even though training is guided by **global IQA rewards** only.
 
