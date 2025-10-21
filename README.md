@@ -63,20 +63,23 @@ Combines full-reference (fidelity) and no-reference (realism) IQA metrics to gui
 </details>
 
 
-### 🔄 Multiple Preference Pairs Learning
+### Multiple Preference Pairs Learning
 
 <details>
-<summary>Preference pair sampling from ranked outputs</summary>
+<summary>Specific ditails</summary>
+Unlike the conventional best-vs-worst strategy, we rank the generated outputs for each input and retain only the top-N and bottom-N samples to form positive and negative sets. Preference pairs are then constructed between these subsets, avoiding uncertain middle samples and leading to richer supervision and more stable training.
 
-Instead of one best-vs-worst pair, we rank multiple outputs per input and sample multiple preference pairs — leading to richer and more stable learning.
 
 </details>
 
 
-### 📊 Data Curation Strategy
+
+
+
+###  Data Curation Strategy
 
 <details>
-<summary>Model-specific sampling strategies</summary>
+<summary>Sampling strategy trend</summary>
 
 The optimal sampling strategy depends on model capacity:  
 - Small models prefer **broader coverage** (e.g. 1/4)  
@@ -93,7 +96,7 @@ The optimal sampling strategy depends on model capacity:
 
 
 
-### 🧩 Hierarchical Preference Optimization (HPO)
+### Hierarchical Preference Optimization (HPO)
 
 <details>
 <summary>Adaptive intra/inter-group weighting</summary>
