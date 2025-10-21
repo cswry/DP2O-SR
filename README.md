@@ -28,9 +28,8 @@
 
 </div>
 
-## 🧠 What This Work Does
-
-**TL;DR:**  
+## 🧠 TL;DR
+ 
 DP²O-SR post-trains generative SR models to better match human perceptual preferences,  
 by optimizing over diverse outputs (sampled via noise) using IQA-based rewards, without requiring human annotations during training.
 
