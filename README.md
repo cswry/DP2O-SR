@@ -90,22 +90,12 @@ The optimal sampling strategy depends on model capacity:
 - Small models prefer **broader coverage** (e.g. 1/4)  
 - Large models learn better with **stronger contrast** (e.g. 1/16)
 
-<div align="center">
+<p align="center">
+  <img src="assets/curation_sd2.png" width="49%"/>
+  <img src="assets/curation_flux.png" width="49%"/>
+</p>
 
-<table>
-<tr>
-<td align="center">
-<b>C-SD2</b><br>
-<img src="assets/curation_sd2.png" width="300"/>
-</td>
-<td align="center">
-<b>C-FLUX</b><br>
-<img src="assets/curation_flux.png" width="300"/>
-</td>
-</tr>
-</table>
-
-</div>
+<p align="center"><b>Figure:</b> Sampling strategy trend on C-SD2 (left) and C-FLUX (right).</p>
 
 </details>
 
@@ -141,24 +131,18 @@ We explore how perceptual quality varies with the number of sampled outputs **M*
 
 This shows that **DP²O-SR not only improves average perceptual quality** but more importantly **raises the quality floor**, resulting in more consistent and robust outputs across different seeds.
 
-<div align="center">
+<!-- <details>
+<summary>📈 Best/Mean/Worst curves on C-SD2 and C-FLUX</summary> -->
 
-<table>
-<tr>
-<td align="center">
-<b>C-SD2</b><br>
-<img src="assets/performance_sd2.png" width="300"/>
-</td>
-<td align="center">
-<b>C-FLUX</b><br>
-<img src="assets/performance_flux.png" width="300"/>
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/stats_sd2.png" width="49%"/>
+  <img src="assets/stats_flux.png" width="49%"/>
+</p>
 
-</div>
+<p align="center"><b>Figure:</b> Perceptual reward curves across varying sample numbers (M). Left: C-SD2; Right: C-FLUX.</p>
 
 </details>
+<!-- </details> -->
 
 
 
@@ -173,10 +157,11 @@ DP²O-SR leads to **localized visual improvements**, even though training is gui
 - **Same-seed refinement**: Under the same seed, DP²O-SR outputs consistently show sharper and more accurate textures than the baseline (e.g., clearer wing venation).  
 - **Global-to-local effect**: These refinements emerge without any explicit local supervision, suggesting the model learns to enhance perceptually salient regions.
 
-<div align="center">
-  <img src="assets/local_refinement.jpg" width="500"/>
-  <p><b></b> DP²O-SR enhances local details (e.g., wing structure, red box) while preserving stable regions (e.g., head reflections, green box).</p>
-</div>
+<p align="center">
+  <img src="assets/local_refinement.jpg" width="95%"/>
+</p>
+
+<p align="center"><b>Figure:</b> DP²O-SR enhances local details (e.g., wing structure, red box) while preserving stable regions (e.g., head reflections, green box).</p>
 
 </details>
 
