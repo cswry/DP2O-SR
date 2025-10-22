@@ -23,7 +23,7 @@
   <sup>†</sup>Corresponding author
 </div>
 
-[📄 Paper ](https://arxiv.org/pdf/2406.08177)
+[📄 Paper ](https://arxiv.org/pdf/2510.18851)
 
 
 </div>
@@ -177,7 +177,7 @@ We will release:
 @inproceedings{wu2025dp2osr,
   title     = {DP²O-SR: Direct Perceptual Preference Optimization for Real-World Image Super-Resolution},
   author    = {Wu, Rongyuan and Sun, Lingchen and Zhang, Zhengqiang and Wang, Shihao and Wu, Tianhe and Yi, Qiaosi and Li, Shuai and Zhang, Lei},
-  booktitle = {NeurIPS},
+  journal={arXiv preprint arXiv:2510.18851},
   year      = {2025}
 }
 ```
