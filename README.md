@@ -162,14 +162,97 @@ DP²O-SR leads to **localized visual improvements**, even though training is gui
 
 We will release:
 
-- [ ] Testing code & evaluation scripts
-- [ ] Pretrained checkpoints:
+- ~~[ ] Testing code~~
+- ~~[ ] Pretrained checkpoints:~~
   - `C-SD2`, `C-FLUX`
-- [ ] DP²O-SR fine-tuned models:
+- ~~[ ] DP²O-SR fine-tuned models:~~
   - `DP²O-SR(SD2)`, `DP²O-SR(FLUX)`
 - [ ] Training code (diffusion-based & flow-based)
 - [ ] Training datasets & IQA reward labels
 
+
+## ⚙️ Dependencies and Installation
+```
+## git clone this repository
+git clone https://github.com/cswry/DP2O-SR.git
+cd DP2O-SR
+
+# create an environment with python >= 3.8
+conda create -n dp2osr python=3.8
+conda activate dp2osr
+pip install -r requirements.txt
+```
+
+## 🚀 Quick Inference
+#### Step 1: Download the pretrained models
+- Download the pretrained **FLUX.1-dev** from [HuggingFace](https://huggingface.co/black-forest-labs/FLUX.1-dev).
+- Since the official **SD2-base** has been taken down, we have hosted it together with **C-FLUX**, **DP²O-FLUX**, **C-SD2**, and **DP²O-SD2** on [HuggingFace](https://huggingface.co/CSWRY/DP2O-SR).
+- Additionally, the **RAM** and **DAPE** models (used for extracting tag-style text prompts) are also available on [HuggingFace](https://huggingface.co/CSWRY/DP2O-SR).
+
+You can put the models into `preset/models`.
+
+
+#### Step 2: Prepare testing data
+You can put the testing images in the `preset/test_inp`.
+
+#### Step 3: Running testing command
+```
+# C-SD2
+accelerate launch test_sd2b_controlnet.py \
+    --pretrained_model_name_or_path "preset/models/stable-diffusion-2-base" \
+    --controlnet_model_name_or_path "preset/models/c-sd2/model.safetensors" \
+    --image_path "preset/test_inp" \
+    --output_dir "preset/test_oup_c_sd2" \
+    --align_method "adain" \
+    --ram_path "preset/models/ram_swin_large_14m.pth" \
+    --dape_path "preset/models/DAPE.pth" \
+    --guidance_scale 3.5 \
+    --num_inference_steps 50 \
+    --mixed_precision "fp16" 
+    
+# DP²O-SD2
+accelerate launch test_sd2b_controlnet.py \
+    --pretrained_model_name_or_path "preset/models/stable-diffusion-2-base" \
+    --controlnet_model_name_or_path "preset/models/dp2o-sd2/model.safetensors" \
+    --image_path "preset/test_inp" \
+    --output_dir "preset/test_oup_dp2o_sd2" \
+    --align_method "adain" \
+    --ram_path "preset/models/ram_swin_large_14m.pth" \
+    --dape_path "preset/models/DAPE.pth" \
+    --guidance_scale 3.5 \
+    --num_inference_steps 50 \
+    --mixed_precision "fp16" 
+
+# C-FLUX
+accelerate launch test_flux_controlnet.py \
+    --pretrained_model_name_or_path "black-forest-labs/FLUX.1-dev" \
+    --controlnet_model_name_or_path "preset/models/c-flux/model.safetensors" \
+    --image_path "preset/test_inp" \
+    --output_dir "preset/test_oup_c_flux" \
+    --align_method "adain" \
+    --ram_path "preset/models/ram_swin_large_14m.pth" \
+    --dape_path "preset/models/DAPE.pth" \
+    --num_double_layers 4 \
+    --num_single_layers 0 \
+    --guidance_scale 2.5 \
+    --num_inference_steps 25 \
+    --mixed_precision "fp16" 
+    
+# DP²O-FLUX
+accelerate launch test_flux_controlnet.py \
+    --pretrained_model_name_or_path "black-forest-labs/FLUX.1-dev" \
+    --controlnet_model_name_or_path "preset/models/dp2o-flux/model.safetensors" \
+    --image_path "preset/test_inp" \
+    --output_dir "preset/test_oup_dp2o_flux" \
+    --align_method "adain" \
+    --ram_path "preset/models/ram_swin_large_14m.pth" \
+    --dape_path "preset/models/DAPE.pth" \
+    --num_double_layers 4 \
+    --num_single_layers 0 \
+    --guidance_scale 2.5 \
+    --num_inference_steps 25 \
+    --mixed_precision "fp16" 
+```
 
 ## 📜 Citation
 
