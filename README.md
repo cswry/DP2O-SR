@@ -28,6 +28,21 @@
 
 </div>
 
+
+## 📋 Todo List
+
+We will release:
+
+- ~~[ ] Testing code~~
+- ~~[ ] Pretrained checkpoints:~~
+  - `C-SD2`, `C-FLUX`
+- ~~[ ] DP²O-SR fine-tuned models:~~
+  - `DP²O-SR(SD2)`, `DP²O-SR(FLUX)`
+- [ ] Training code (diffusion-based & flow-based)
+- [ ] Training datasets & IQA reward labels
+
+
+
 ## 🧠 TL;DR
  
 DP²O-SR post-trains generative SR models to better match human perceptual preferences,  
@@ -158,19 +173,6 @@ DP²O-SR leads to **localized visual improvements**, even though training is gui
 
 </details>
 
-## 📋 Todo List
-
-We will release:
-
-- ~~[ ] Testing code~~
-- ~~[ ] Pretrained checkpoints:~~
-  - `C-SD2`, `C-FLUX`
-- ~~[ ] DP²O-SR fine-tuned models:~~
-  - `DP²O-SR(SD2)`, `DP²O-SR(FLUX)`
-- [ ] Training code (diffusion-based & flow-based)
-- [ ] Training datasets & IQA reward labels
-
-
 ## ⚙️ Dependencies and Installation
 ```
 ## git clone this repository
@@ -185,9 +187,9 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Inference
 #### Step 1: Download the pretrained models
-- Download the pretrained **FLUX.1-dev** from [HuggingFace](https://huggingface.co/black-forest-labs/FLUX.1-dev).
-- Since the official **SD2-base** has been taken down, we have hosted it together with **C-FLUX**, **DP²O-FLUX**, **C-SD2**, and **DP²O-SD2** on [HuggingFace](https://huggingface.co/CSWRY/DP2O-SR).
-- Additionally, the **RAM** and **DAPE** models (used for extracting tag-style text prompts) are also available on [HuggingFace](https://huggingface.co/CSWRY/DP2O-SR).
+- Download the pretrained **FLUX.1-dev** from [Google Drive](https://drive.google.com/drive/folders/1LVSwWbjJdn5Wxy79AwV5LdPX2S2Hotx1?usp=sharing).
+- Since the official **SD2-base** has been taken down, we have hosted it together with **C-FLUX**, **DP²O-FLUX**, **C-SD2**, and **DP²O-SD2** on [Google Drive](https://drive.google.com/drive/folders/1LVSwWbjJdn5Wxy79AwV5LdPX2S2Hotx1?usp=sharing).
+- Additionally, the **RAM** and **DAPE** models (used for extracting tag-style text prompts) are also available on [Google Drive](https://drive.google.com/drive/folders/1LVSwWbjJdn5Wxy79AwV5LdPX2S2Hotx1?usp=sharing).
 
 You can put the models into `preset/models`.
 
