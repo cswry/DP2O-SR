@@ -187,7 +187,7 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Inference
 #### Step 1: Download the pretrained models
-- Download the pretrained **FLUX.1-dev** from [Google Drive](https://drive.google.com/drive/folders/1LVSwWbjJdn5Wxy79AwV5LdPX2S2Hotx1?usp=sharing).
+- Download the pretrained **FLUX.1-dev** from [Hugging Face](https://huggingface.co/black-forest-labs/FLUX.1-dev).
 - Since the official **SD2-base** has been taken down, we have hosted it together with **C-FLUX**, **DP²O-FLUX**, **C-SD2**, and **DP²O-SD2** on [Google Drive](https://drive.google.com/drive/folders/1LVSwWbjJdn5Wxy79AwV5LdPX2S2Hotx1?usp=sharing).
 - Additionally, the **RAM** and **DAPE** models (used for extracting tag-style text prompts) are also available on [Google Drive](https://drive.google.com/drive/folders/1LVSwWbjJdn5Wxy79AwV5LdPX2S2Hotx1?usp=sharing).
 
